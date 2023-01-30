@@ -82,4 +82,8 @@ ldap-search-bind-password:  [Password]
 ldap-member-attribute:      member
 ldap-member-attribute-type: dn
 ldap-group-name-attribute:  cn
-ldap-group-base-dn:         OU=[Organiztional Unit],DC[Domain Component
+ldap-group-base-dn:         OU=[Organiztional Unit],DC[Domain Component],DC=[Domain Component]
+# Import groups as groups and users as users. Without this lines the groups were importet as users and the users as groups.
+ldap-group-search-filter:   (objectClass=group)
+ldap-user-search-filter:    (objectClass=user)
+

@@ -66,7 +66,7 @@ cd config/
 ```
 nano guacamole.properties
 ```
-### Change the [] to your LDAP properties
+### Copy this to your guacamole.properties file and change the [] to your LDAP properties
 ```
 # Auth provider Class
 auth-provider: net.sourcefroge.guacamole.net.auth.ldap.LDAPAuthenticationProvider
